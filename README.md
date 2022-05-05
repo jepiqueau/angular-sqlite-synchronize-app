@@ -1,7 +1,7 @@
 <p align="center"><br><img src="https://avatars3.githubusercontent.com/u/16580653?v=4" width="128" height="128" /></p>
 
 <h3 align="center">Ionic/Angular SQLite Synchronization App</h3>
-<p align="center"><strong><code>capacitor-solid-sqlite</code></strong></p>
+<p align="center"><strong><code>angular-sqlite-synchronize-app</code></strong></p>
 <p align="center">Ionic/Angular application demonstrating the use of the</p>
 <p align="center"><strong><code>@capacitor-community/sqlite</code></strong></p>
 <p align="center">in the context of synchronization with a remote server datase by using the import/export JSON facilities</p>
@@ -84,6 +84,8 @@ npx cap open ios
 ### Electron
 ```bash
 npx cap open @capacitor-community/electron
+```
+
 ### Test SQLite access
 
 The ```@capacitor-community/sqlite``` tests are accessible directly at the home page.
