@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,35 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div *ngIf="isDisplay" id="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Messages</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        {{logMsgs}}
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Users</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ul>
+          <li *ngFor="let user of users">
+            <div>
+              <span>Name: {{user.uname}} uDeleted: {{user.udeleted}}</span><br>
+              <span *ngIf="user.mtitle !== null">-   mTitle: {{user.mtitle}} mDeleted: {{user.mdeleted}}</span>
+            </div>
+          </li>
+      </ul>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>

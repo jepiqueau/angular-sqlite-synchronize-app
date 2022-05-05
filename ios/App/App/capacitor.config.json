@@ -1,0 +1,16 @@
+{
+	"appId": "icom.jeep.app.ionic.angular.synchronize",
+	"appName": "angular-sqlite-synchronize-app",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"plugins": {
+		"CapacitorSQLite": {
+			"iosDatabaseLocation": "Library/CapacitorDatabase",
+			"iosIsEncryption": false,
+			"androidIsEncryption": false,
+			"electronWindowsLocation": "C:\\ProgramData\\CapacitorDatabases",
+			"electronMacLocation": "/Volumes/Development_Lacie/Development/CapacitorDatabases",
+			"electronLinuxLocation": "Databases"
+		}
+	}
+}
