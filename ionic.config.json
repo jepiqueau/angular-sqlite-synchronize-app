@@ -1,0 +1,7 @@
+{
+  "name": "angular-sqlite-synchronize-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
